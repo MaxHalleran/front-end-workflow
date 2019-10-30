@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+// Imported first as helpers need to be defined highest in the stylesheet
+// @import 'abstracts/abstracts-dir';
+
+// 2. Vendors
+// Second so vendor styles can be overwritten if needed
+// @import 'vendors/vendors-dir';
+
+// 3. Base
+// After vendor to be able to overwrite some vendor styling
+// @import 'base/base-dir';
+
+// 4. Layout Related Sections
+// @import 'layout/layout-dir';
+
+// 5. Components
+// @import 'components/components-dir';
+
+// 6. Page Specific Styles
+// @import 'pages/pages-dir';
+
+// 7. Themes
+// @import 'themes/themes-dir';
