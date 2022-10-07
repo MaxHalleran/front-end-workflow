@@ -1,0 +1,6 @@
+/src/vendor
+/src/node_modules
+/dist
+/node_modules
+/.env.json
+package-lock.json
