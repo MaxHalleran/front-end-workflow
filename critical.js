@@ -21,6 +21,7 @@ const urlList = require('./pageList.json');
 
 sass.compiler = require('node-sass');
 
+// For WordPress
 env('.env.json');
 const childTheme = process.env.CHILD_THEME;
 const devStyle = process.env.DEV_STYLESHEET_NAME;
@@ -81,7 +82,7 @@ gulp.task('generateCritical', function () {
 			.pipe(
 				penthouse({
 					out: `critical-${page.name}.css`,
-					url: `https://konstructdigital.com${page.url}`,
+					url: `${url}/${page.name}`,
 					width: 2000,
 					height: 1100,
 					keepLargerMediaQueries: true,
@@ -109,7 +110,7 @@ gulp.task('generateCritical', function () {
 		for (let page in urlList) {
 			var postCssPlugins = [
 				uncss({
-					html: [`https://www.konstructdigital.com/${urlList[page].url}`],
+					html: [`${url}/${urlList[page].url}`],
 				}),
 			];
 			setTimeout(() => {
