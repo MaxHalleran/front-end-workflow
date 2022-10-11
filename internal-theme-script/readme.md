@@ -18,7 +18,6 @@ Build files:
 	* inc/**
 	* js/**
 	* languages/
-		* konstruct.pot
 	* layouts/**
 	* template-parts/**
 

@@ -193,7 +193,7 @@ gulp.task('deploy', () => {
 		sshConfig: config
 	});
 
-	stream = stream.pipe(gulpSSH.dest('/wp-content/themes/konstruct/'));
+	stream = stream.pipe(gulpSSH.dest('${theme}'));
 
 	return stream.pipe(notify("Successfully uploaded file: <%= file.relative %>."));
 });

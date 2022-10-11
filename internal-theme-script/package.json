@@ -1,5 +1,5 @@
 {
-	"name": "konstruct-internal-theme-gulp-deploy",
+	"name": "theme-gulp-deploy",
 	"version": "1.0.0",
 	"devDependencies": {
 		"@babel/core": "^7.0.0",
@@ -29,6 +29,6 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Konstruct",
+	"author": "Max Halleran",
 	"license": "ISC"
 }
